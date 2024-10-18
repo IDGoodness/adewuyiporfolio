@@ -9,7 +9,7 @@
   --red: #F85C70;
   --orange: #FF8882;
   --yellow: #FAD02C;
-  --green: #A3C14A;
+  --green: #066606;
   --teal: #20c997;
   --cyan: #47D8E0;
   --white: #fff;
@@ -17,7 +17,7 @@
   --gray-dark: #343a40;
   --primary: #F85C70;
   --secondary: #6c757d;
-  --success: #A3C14A;
+  --success: #066606;
   --info: #47D8E0;
   --warning: #FF8882;
   --danger: #F85C70;
@@ -11374,6 +11374,45 @@ pre .code {
 .social-icons .social-link {
   font-size: 18px;
   color: green;
+  text-decoration: none;
+}
+
+.resume {
+  border-radius: 50px !important;
+  color: green !important;
+}
+
+.resume a {
+  text-decoration: none;
+}
+
+.resume1 {
+  border-radius: 9px !important;
+  /* color: white !important; */
+}
+
+.resume1 a {
+  text-decoration: none;
+}
+
+.resume1:hover {
+  color: white !important;
+}
+
+.resume2 a {
+  text-decoration: none;
+  color: #066606;
+}
+
+.resume3 {
+  border-radius: 9px !important;
+  color: white !important;
+}
+
+
+.resume3 a {
+  text-decoration: none;
+  color: white;
 }
 
 .social-icons .social-link:hover {
