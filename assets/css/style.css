@@ -1314,9 +1314,10 @@ pre .code {
   transition: .5s !important;
   -weblit-transition: .5s !important;
   z-index: 2;
-  box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
+  box-shadow: 0 8px 5px rgba(128, 128, 128, 0.13);
   width: 170px;
-  border-radius: 50%;
+  /* height: 170px; */
+  border-radius: 100px;
 }
 
 .navbar .brand .brand-txt {
@@ -1541,4 +1542,8 @@ pre .code {
   background: green;
   display: block;
   margin-top: 10px;
+}
+
+.custom-progress-bar {
+  height: 5px !important;
 }
