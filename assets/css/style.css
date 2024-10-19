@@ -1422,7 +1422,7 @@ pre .code {
 }
 
 .header .header-content .header-title {
-  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 90px;
   font-weight: bold;
   line-height: .7;
   margin-bottom: 25px;
@@ -1546,4 +1546,85 @@ pre .code {
 
 .custom-progress-bar {
   height: 5px !important;
+}
+
+/* Animate my name... */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+  overflow: hidden;
+  border-right: 0.15em solid rgba(255, 255, 255, 0.75); /* Cursor effect */
+  white-space: nowrap;
+  font-family: monospace;
+  letter-spacing: 0.15em;
+}
+
+/* Typewriter animation for the first element */
+@keyframes typewriter-1 {
+  from { width: 0; }
+  to { width: 20rem; }
+}
+
+/* Typewriter animation for the second element */
+@keyframes typewriter-2 {
+  from { width: 0; }
+  to { width: 63rem; }
+}
+
+@keyframes typewriter-3 {
+  from { width: 0; }
+  to { width: 17rem; }
+}
+
+@keyframes typewriter-4 {
+  from { width: 0; }
+  to { width: 35rem; }
+}
+
+@keyframes blinkTextCursor {
+  0%, 100% { border-right-color: transparent; } /* Invisible before and after typing */
+  50% { border-right-color: rgba(255, 255, 255, 0.75); } /* Blinking during typing */
+}
+
+@keyframes blinkTextCursorDuringTyping {
+  0%, 100% { border-right-color: rgba(255, 255, 255, 0.75); } /* Blinking during typing */
+}
+
+@keyframes blinkTextCursorAfterTyping {
+  0%, 100% { border-right-color: transparent; } /* Invisible after typing */
+}
+
+.anim-delay-1 {
+  animation: typewriter-1 4s steps(44) 1 normal both,
+            blinkTextCursorDuringTyping 4s steps(44) 1 infinite both;
+            blinkTextCursorAfterTyping 500ms steps(44) infinite normal;
+  animation-delay: 0s;
+}
+
+.anim-delay-2 {
+  animation: typewriter-1 4s steps(44) 1 normal both,
+            blinkTextCursorDuringTyping 4s steps(44) 1 infinite both;
+            blinkTextCursorAfterTyping 500ms steps(44) infinite normal;
+  animation-delay: 4s; /* Adjust the delay as needed */
+}
+
+.anim-delay-3 {
+  animation: typewriter-1 4s steps(44) 1 normal both,
+            blinkTextCursorDuringTyping 4s steps(44) 1 infinite both;
+            blinkTextCursorAfterTyping 500ms steps(44) infinite normal;
+  animation-delay: 8s; /* Adjust the delay as needed */
+}
+
+.anim-delay-4 {
+  animation: typewriter-1 4s steps(44) 1 normal both,
+            blinkTextCursorDuringTyping 4s steps(44) 1 infinite both;
+            blinkTextCursorAfterTyping 500ms steps(44) infinite normal;
+  animation-delay: 12s; /* Adjust the delay as needed */
+}
+
+
+
+@keyframes blinkTextCursor {
+  from { border-right-color: rgba(255, 255, 255, 0.75); }
+  to { border-right-color: transparent; }
 }
