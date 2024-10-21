@@ -1433,7 +1433,7 @@ pre .code {
   letter-spacing: 5px;
   font-weight: 500;
   font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 @media (max-width: 767.98px) {
@@ -1552,7 +1552,7 @@ pre .code {
 /* Typewriter animation for the first element */
 @keyframes typewriter-1 {
   from { width: 0; }
-  to { width: 20rem; }
+  to { width: 21rem; }
 }
 
 @keyframes typewriter-2 {
@@ -1562,12 +1562,12 @@ pre .code {
 
 @keyframes typewriter-3 {
   from { width: 0; }
-  to { width: 17rem; }
+  to { width: 18rem; }
 }
 
 @keyframes typewriter-4 {
   from { width: 0; }
-  to { width: 35rem; }
+  to { width: 37rem; }
 }
 
 @keyframes blinkTextCursor {
@@ -1617,4 +1617,24 @@ pre .code {
              blinkTextCursorDuringTyping 4s steps(44) 1 normal both,
              blinkTextCursorAfterTyping 500ms steps(44) infinite normal;
   animation-delay: 12s;
+}
+
+@media (max-width: 576px) {
+  @keyframes typewriter-2 {
+    from { width: 0; }
+    to { width: 25rem; }
+  }
+
+  @keyframes typewriter-4 {
+    from { width: 0; }
+    to { width: 25rem; }
+  }
+
+  .resume {
+    display: none;
+  }
+}
+
+.smallName {
+  font-size: 40px;
 }
