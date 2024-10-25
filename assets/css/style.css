@@ -1257,6 +1257,7 @@ pre .code {
 .resume {
   border-radius: 50px !important;
   color: green !important;
+  margin-top: 100px;
 }
 
 .resume a {
@@ -1443,9 +1444,9 @@ pre .code {
 }
 
 .header .header-content .header-title {
-  font-size: 90px;
-  font-weight: bold;
-  line-height: .7;
+  font-size: 60px;
+  /* font-weight: bold; */
+  /* line-height: .7; */
   margin-bottom: 25px;
   color: inherit;
 }
