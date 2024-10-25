@@ -15,7 +15,13 @@
     <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
     <script src="https://kit.fontawesome.com/4b23a70517.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="script.js">
+        (function() {
+            emailjs.init("SwvzBam1DXaKItXKm");
+        })();
+    </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" data-aos="fade-up" data-aos-duration="3000">
     <!-- <div id="spinner" class="spinner">
@@ -278,15 +284,14 @@
         </div>
     </section>
 
-
     <div class="section contact" id="contact" data-aos="zoom-out" data-aos-duration="3000">
-        <div id="map" class="map"></div>
+        <!-- <div id="map" class="map"></div> -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Send a message</h4>
-                        <form action="">
+                        <form id="contact-form">
                             <div class="form-group">
                                 <label for="name" class="ml-1 mb-2">Full Name:</label>
                                 <input  class="form-control" type="text" placeholder="Goodness Adewuyi" id="name" required>
@@ -300,7 +305,7 @@
                                 <textarea class="form-control mb-4" placeholder="Write to me..." rows="4" id="message"></textarea>
                             </div>
                             <div class="form-group ">
-                                <button type="button" class="form-control btn btn-success resume3" onclick=""><a href="mailto:adewuyigoodness1@gmail.com?subject = Feedback&body = Message" style="color: white;" target="_blank">Send Me An Email </a></button>
+                                <button class="form-control btn btn-success resume3" onclick="sendMail()">Send Me An Email</button>
                             </div>
                         </form>
                         <!-- <a href="mailto:adewuyigoodness1@gmail.com?subject = Feedback&body = Message" style="color: white;" target="_blank">Send Me An Email </a> -->
@@ -354,6 +359,9 @@
         </div>
     </footer>
 
+
+    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -375,7 +383,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <script src="./assets/vendors/owlcarousel/owl.carousel.min.js"></script>
+    <!-- <script src="./assets/vendors/owlcarousel/owl.carousel.min.js"></script> -->
     <!-- <script src="jquery.min.js"></script> -->
     <!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
     <!-- bootstrap 3 affix -->

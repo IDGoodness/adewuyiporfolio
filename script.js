@@ -1,31 +1,20 @@
-// $('.services-carousel').owlCarousel({
-//   autoplay: true,
-//   loop: true,
-//   margin: 20,
-//   dots: true,
-//   nav: false,
-//   responsiveClass: true,
-//   responsive: { 
-//     0: { 
-//       items: 1
-//     },
-//     768: { 
-//       items: 2
-//     },
-//     900: {
-//       items: 4
-//     }
-//   }
-// });
+function sendMail() {
+  const params = {
+    from_name: document.getElementById('name').value,
+    email_id: document.getElementById('email').value,
+    message: document.getElementById('message').value
+  };
+  emailjs.send('service_8g4i7pj', 'template_t4m2l8u', params)
+    .then(function(res) {
+      alert("Success!")
+      console.log('SUCCESS!', res.status, res.text);
+    }, function(error) {
+      console.log('FAILED...', error);
+      alert("Failed....!")
+    });
+}
 
-
-
-
-// const getData = () => {
-//   const name = document.getElementById('name').value;
-//   console.log(name);
-//   const email = document.getElementById('email').value;
-//   console.log(email);
-//   const message = document.getElementById('message').value;
-//   console.log(message);
-// }
+// Ensure EmailJS is initialized
+document.addEventListener("DOMContentLoaded", function() {
+  emailjs.init("YC1scBQUcW0aPNV-M");
+});

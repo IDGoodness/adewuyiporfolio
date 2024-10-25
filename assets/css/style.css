@@ -1533,14 +1533,6 @@ pre .code {
   }
 }
 
-.contact .map {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .contact .contact-form-card,
 .contact .contact-info-card {
   padding: 35px;
@@ -1643,12 +1635,12 @@ pre .code {
 @media (max-width: 576px) {
   @keyframes typewriter-2 {
     from { width: 0; }
-    to { width: 25rem; }
+    to { width: 17rem; }
   }
 
   @keyframes typewriter-4 {
     from { width: 0; }
-    to { width: 25rem; }
+    to { width: 16rem; }
   }
 
   .resume {
